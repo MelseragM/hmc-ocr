@@ -1,0 +1,9 @@
+services:
+  paddle-ocr:
+    build:
+      context: ./paddle-ocr-api
+    ports:
+      - "8000:8000"
+    environment:
+      PADDLE_OCR_LANG: en
+      FLAGS_enable_pir_api: "0"
