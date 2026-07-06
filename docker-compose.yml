@@ -1,7 +1,7 @@
 services:
   paddle-ocr:
     build:
-      context: ./paddle-ocr-api
+      context: ./
     ports:
       - "8000:8000"
     environment:
